@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20px Arial;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+   <h1>Iniciando os estudos do DOM</h1>
+   <p>Aqui vai o resultado</p>
+   <p>aprendendo a usar o <strong>DOM</strong></p>
+   <div>clique Aqui</div>
+   <script>
+        var p1 = window.Document.getElementsByTagName('p')[0]
+        window.Document.write(<p>teste</p>+p1.innerText)
+   </script>
+</body>
+</html>
