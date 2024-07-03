@@ -9,6 +9,25 @@
 <body>
     <h1>Iniciando os estudos com o DOM</h1>
     <p>Aqui vai ser o resultado </p>
-    <div>cliqui em min</div>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div class="msg">cliqui em min</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /* a div tem que esta escrito ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'gray'
+        d.innerText = 'Estou aguardando...'
+        
+        document.write(p1.innerText)
+         o innerText pega o texto que está dentro da tag
+         o innerHTML pega o texto e as tags que estão dentro da tag
+        pode selecionar pelo nome,marca,classe,id,seletor para selecionar todos os elementos 
+         */
+         var d = window.document.getElementsByName('msg')[0]
+         var d = window.document.querySelector('div.msg')
+         d.style.background = 'blue'
+       
+    </script>
 </body>
 </html>
