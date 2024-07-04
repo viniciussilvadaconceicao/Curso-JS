@@ -30,8 +30,9 @@
             if (vel > 50) {
                 resp.innerHTML = `Sua velocidade foi <strong>${vel}KM/H</strong>, Você foi <span style="color: red;">multado</span> por excesso de velocidade!`
             }else{
-                resp.innerHTML = `sua velocidade foi <strong>${vel}KM/H</strong>,<span style="color: green;"> Dirija sempre com segurança!</span>`
+                resp.innerHTML = `Sua velocidade foi <strong>${vel}KM/H</strong>,`
             }
+            resp.innerHTML += `<p><span style="color: green;"> Dirija sempre com segurança!</span></p>`
             
         }
     </script>
