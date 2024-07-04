@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exerc 7</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">+
+    <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="somar()">
-    <div>Resposta</div>
+    <div id="rsp">Resposta</div>
+    
     <script>
         function somar(){
             var tn1 = window.document.getElementById('txtn1')
-            var tn2 = window.document.getSelection('input#txtn2')
-            var n1 = Number(tn1.Value)
-            var n2 = Number(tn2.Value)
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
             var s = n1 + n2
+            rsp.innerHTML = `a soma entre ${n1} + ${n2} = <strong>${s}</strong>`   
         }
     </script>
 </body>
