@@ -7,10 +7,23 @@
 </head>
 <body>
     <h1>Sistema Países</h1>
-    <input type="text" name="txt1" id="txt1">
-    <input type="button" value="Verificar">
+    Qual o seu País de origem: <input type="text" name="txt1" id="txt1" >
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="resp">Então você é ...</div>
     <script>
-    
+    function Verificar(){
+        var txt1 = window.document.getElementById('txt1').value
+        var resp = window.document.getElementById('resp')
+        // botei o .toUpperCase() para a resposta ser independente de ser maiúscula ou minúscula ele tem que esta dentro de if e else
+        if(txt1.toUpperCase() === 'BRASIL'){
+            resp.innerHTML = `Você respondeu que seu País de origem é <strong>${txt1}</strong>,
+            então você é <strong>Brasileiro</strong>`
+        }else{
+            resp.innerHTML = `Você respondeu que seu País de origem é <strong>${txt1}</strong>,
+            então você é <strong>Estrangeiro</strong>`
+        }
+        resp.innerHTML += "<p><span style='color: green'>Seja bem-vindo ao nosso Sistema</span></p>"
+    }
     </script>
 </body>
 </html>
