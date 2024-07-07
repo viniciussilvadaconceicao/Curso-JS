@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gravidas</title>
+    <style>
+        body{
+            background-color:rgb(255, 255, 255) ;
+        }
+    </style>
 </head>
 <body>
+    <h1>Programa para saber o tempo de Gravides</h1>
+    <p>Digite a data da ultima menstruação</p>
+    <input type="number" name="semana" id="semanaInput">
+    <button onclick="grav()">Calcular</button>
+    <p id="resposta"></p>
     <script>
+        function grav(){
+    var semana = parseInt(document.getElementById('semanaInput').value)
+    var meses = Math.floor(semana / 4)
+    var semanas = semana % 4
+    resposta = document.getElementById('resposta')
+    resposta.innerHTML = `Você está com <strong>${meses} meses e ${semanas} semanas</strong> de gravidez.`
+    if (meses < 1) {
+        console.log(`Você ainda não completou um mês de gravidez. Está com ${semanas} semana(s).\n`)
+    }
+    else if (meses == 1) {
+        if (semanas == 0) {
+            console.log(`Você está com 1 mês de gravidez.\n`)
+        }
+        else {
+            console.log(`Você está com 1 mês e ${semanas} semana(s) de gravidez.\n`)
+        }
+    }
+    else if (meses > 1) {
+        if (semanas == 0) {
+            console.log(`Você está com ${meses} meses de gravidez.\n`)
+        }
+        else {
+            console.log(`Você está com ${meses} meses e ${semanas} semana(s) de gravidez.\n`)
+        }
+    }
+    else {
+        console.log('Valor inválido. Tente novamente.\n')
+    }
+}
 
     </script>
 </body>
