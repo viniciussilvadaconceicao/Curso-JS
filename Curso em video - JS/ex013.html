@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio13</title>
+   
+</head>
+<body>
+    <header>
+        <h1>Programa sobre o tempo</h1>
+    </header>
+    <section>
+        <p>vamos te informar o periodo do dia com base no horário</p>
+        Aperte o botão ao lado:<input type="button" value="Verificar" onclick="Verificar()">
+        <div id="resp"></div>
+    </section>
+    <footer>
+        <p>&copy; Vinicius Silva da conceição - 2024</p>
+    </footer>
+    <script>
+    function Verificar(){
+        var agora = new Date()
+        var hora = agora.getHours()
+        var resp = window.document.getElementById('resp')
+        if(hora >= 0 && hora < 12){
+            resp.innerHTML = `Agora são ${hora} horas. Bom dia!`
+        }
+        else if(hora >= 12 && hora < 18){
+            resp.innerHTML = `Agora são ${hora} horas. Boa tarde!`
+        }
+        else{
+            resp.innerHTML = `Agora são ${hora} horas. Boa noite!`
+        }
+    }
+    
+        
+
+    </script>
+</body>
+</html>
