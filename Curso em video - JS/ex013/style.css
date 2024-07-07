@@ -1,0 +1,28 @@
+body{
+    font: normal 18pt arial;
+    background: blue;
+    text-align: center;
+    
+}
+section{
+    background: white;
+    color: black;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+div{
+    margin-top: 30px;
+    font: normal 20pt arial;
+}
+footer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    color: white;
+
+}
