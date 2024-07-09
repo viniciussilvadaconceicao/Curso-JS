@@ -4,39 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio13</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="style" rel="stylesheet" href="style.css">
    
 </head>
 <body>
     <header>
         <h1>Programa sobre o tempo</h1>
     </header>
-    <section>
-        <p>vamos te informar o periodo do dia com base no horário</p>
+    <section id="msg">
+        <div>vamos te informar o periodo do dia com base no horário</div>
         Aperte o botão ao lado:<input type="button" value="Verificar" onclick="Verificar()">
+        <div id="fot"></div>
         <div id="resp"></div>
     </section>
     <footer>
         <p>&copy; Vinicius Silva da conceição - 2024</p>
     </footer>
-    <script>
-    function Verificar(){
-        var agora = new Date()
-        var hora = agora.getHours()
-        var resp = window.document.getElementById('resp')
-        if(hora >= 0 && hora < 12){
-            resp.innerHTML = `Agora são ${hora} horas. Bom dia!`
-        }
-        else if(hora >= 12 && hora < 18){
-            resp.innerHTML = `Agora são ${hora} horas. Boa tarde!`
-        }
-        else{
-            resp.innerHTML = `Agora são ${hora} horas. Boa noite!`
-        }
-    }
-    
-        
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

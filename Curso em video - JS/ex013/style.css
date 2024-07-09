@@ -1,9 +1,11 @@
 body{
     font: normal 18pt arial;
     background: blue;
+    color:rgb(255, 255, 255);
     text-align: center;
-    
+  
 }
+ 
 section{
     background: white;
     color: black;
@@ -18,12 +20,7 @@ div{
     margin-top: 30px;
 }
 footer{
-    color: white;
     text-align: center;
     padding: 10px;
     font-style: italic ;
-}
-h1{
-    color: white;
-
 }
