@@ -15,13 +15,13 @@ function Verificar(){
     else if(hora >= 12 && hora < 18){
         fot.innerHTML = ' <img src="imagem/tarde.jpg" alt="foto da tarde"></img>'
         resp.innerHTML = `Agora são ${hora} horas. Boa tarde!`
-        document.body.style.background = 'orange'
+        document.body.style.background = ' rgb(248, 132, 65)'
         document.body.style.color = 'black'
     }
     else{
         fot.innerHTML = '<img src="imagem/noite.jpg" alt="foto da noite"></img></img>'
         resp.innerHTML = `Agora são ${hora} horas. Boa noite!`
-        document.body.style.background = 'black'
+        document.body.style.background = 'rgb(39, 27, 55)'
         document.body.style.color = 'white'
     }
 }
