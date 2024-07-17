@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contador</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="ex016.js"></script>
+    
 </head>
 <body>
     <header>
@@ -13,24 +13,24 @@
     </header>
     <section>
         <div>início:
-            <input type="number" name="inicio" id="inicio">
+            <input type="number" name="inicio" id="txtinicio">
         </div>
         <div>fim:
-            <input type="number" name="fim" id="fim">
+            <input type="number" name="fim" id="txtfim">
         </div>
         <div>passo:
-            <input type="number" name="passo" id="passo">
+            <input type="number" name="passo" id="txtpasso">
         </div>
         <div>
-            <input type="button" value="Contar">
+            <input type="button" value="Contar" onclick="contar()">
         </div>
-        <div id="resposta">
+        <div id="rsp">
             <p>Preparando a contagem</p>
         </div>
     </section>
     <footer>
         <p>&copy; Vinicius Silva</p>
     </footer>
-    
+   <script src="ex016.js"></script>
 </body>
 </html>
