@@ -1,0 +1,11 @@
+body{
+    background: blue;
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    color: black;
+    text-align: center;
+    font: normal 18px arial;
+}
