@@ -2,10 +2,16 @@ body{
     background: blue;
     color: white;
     text-align: center;
+    font: normal 18px arial;
 }
 section{
     background: white;
     color: black;
     text-align: center;
     font: normal 18px arial;
+    padding: 10px; /* espaçamento interno */
+    margin: auto; /* centralizar */
+    width: 500px ; /* largura */
+    border-radius: 10px; /* bordas arredondadas */
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.363); /* sombra */
 }
