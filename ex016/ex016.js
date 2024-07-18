@@ -20,3 +20,5 @@ function contar(){
     }rsp.innerHTML += '\u{1F3C1}'// Adiciona uma bandeira de chegada após a contagem
 }
 
+/*https://www.unicode.org/emoji/charts/full-emoji-list.html* site dos emoji para javaScrip 
+para inserir o emogi \u{aqui o codigo do emoji} */
