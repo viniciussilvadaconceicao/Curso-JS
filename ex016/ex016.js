@@ -15,7 +15,7 @@ function contar(){
             passo.value = 1
             return;
         } else {
-            rsp.innerHTML += `${cont}<br>`// Adiciona uma quebra de linha após cada valor
+            rsp.innerHTML += `${cont} ,`// Adiciona uma quebra de linha após cada valor
         }
     }
 }
