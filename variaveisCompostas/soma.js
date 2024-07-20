@@ -1,5 +1,5 @@
-function soma (n1 , n2){
+function soma (n1 = 0 , n2 = 0){
     return n1 + n2
 }
-rsp = soma(100, 35)
-console.log(rsp)
+
+console.log(soma(7, 8))
