@@ -1,15 +1,15 @@
 body{
     background: blue;
-    color: white;
     font: normal  18px arial;
-    text-align: center;
+    
 }
-
+header{
+     color: white;
+     text-align: center;
+}
 section{
     background: white;
-    color:  black;
-    font: normal 18px arial;
-    text-align: center; /*alinhar texto*/
+    color:  black; 
     padding: 10px; /*largura interna*/
     width: 500px; /*largura da background*/
     margin: auto; /*centralizar a section*/
@@ -18,7 +18,10 @@ section{
 }
 
 select{
-    padding: 10px;
-    margin: 10px;
+    margin: 5px;
     width:150px;
+}
+footer{
+    text-align: center;
+    color: white;
 }
