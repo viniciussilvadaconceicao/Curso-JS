@@ -28,30 +28,34 @@ function adicionar() {
 }
 
 function finalizar(){
- let lista = document.getElementById('selnum')
- let rsp = document.getElementById('resposta')
- let total = lista.length
- let soma = 0
-let maior = 100
-let menor = 1
-if (total == 0){
-    alert('Adicione valores antes de finalizar!')
-}
-else{
-    for(let i = 0; i < total; i++){
-        soma += Number(lista[i].value)
-        if (Number(lista[i].value) > maior){
-            maior = Number(lista[i].value)
+    let lista = document.getElementById('selnum');
+    let rsp = document.getElementById('rsp');
+    let total = lista.length;
+    let soma = 0;
+    let maior = 0;
+    let menor = Number(lista[0].value)
+    if (total === 0){
+        alert('Adicione valores antes de finalizar!');
+    } else if(total === 1){
+        alert('Adicione mais valores antes de finalizar!');
+    } else {
+        for(let i = 0; i < total; i++){
+            soma += Number(lista[i].value);
+            
+            if (Number(lista[i].value) > maior){
+                maior = Number(lista[i].value);
+            }
+            
+            if (Number(lista[i].value) < menor){
+                menor = Number(lista[i].value);
+            }
         }
-        if (Number(lista[i].value) < menor){
-            menor = Number(lista[i].value)
-        }
-    }
-    rsp.innerHTML = ''
-    rsp.innerHTML += `<p>Ao todo, temos ${total} números cadastrados.</p>`
-    rsp.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
-    rsp.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
-    rsp.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
-    rsp.innerHTML += `<p>A média dos valores digitados é ${soma/total}.</p>`
+        
+        rsp.innerHTML = '';
+        rsp.innerHTML += `<p>Ao todo, temos ${total} números cadastrados.</p>`;
+        rsp.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`;
+        rsp.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`;
+        rsp.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`;
+        rsp.innerHTML += `<p>A média dos valores digitados é ${soma/total}.</p>`;
     }
 }
