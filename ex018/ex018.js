@@ -1,28 +1,28 @@
 function adicionar() {
-    let numero = document.getElementById('numero').value;
-    let selnum = document.getElementById('selnum');
+    let num = document.getElementById('numero').value;
+    let lista = document.getElementById('selnum');
     
-    if (numero === '') {
+    if (num === '') {
         alert('Por favor, digite um número!');
-    } else if (numero < 1 || numero > 100) {
+    } else if (num < 1 || num > 100) {
         alert('Por favor, digite um número entre 1 e 100!');
     } else {
-        let optionExists = false;
+        let opcaoExistente = false;
         
-        for (let i = 0; i < selnum.options.length; i++) {
-            if (numero === selnum.options[i].value) {
-                optionExists = true;
+        for (let i = 0; i < lista.options.length; i++) {
+            if (num === lista.options[i].value) {
+                opcaoExistente = true;
                 break;
             }
         }
         
-        if (optionExists) {
+        if (opcaoExistente) {
             alert('Número já adicionado!');
         } else {
             let item = document.createElement('option');
-            item.text = `Valor ${numero} adicionado.`;
-            item.value = numero; // Add this line to set the value of the option
-            selnum.appendChild(item);
+            item.text = `Valor ${num} adicionado.`;
+            item.value = num; 
+            lista.appendChild(item);
         }
     }
 }
