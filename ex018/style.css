@@ -1,0 +1,18 @@
+body{
+    background: blue;
+    color: white;
+    font: normal  18px arial;
+    text-align: center;
+}
+
+section{
+    background: white;
+    color:  black;
+    font: normal 18px arial;
+    text-align: center; /*alinhar texto*/
+    padding: 10px; /*largura interna*/
+    width: 500px; /*largura da background*/
+    margin: auto; /*centralizar a section*/
+    box-shadow: 5px 5px 5px black; /*sombra*/
+    border-radius: 10px; /*bordas arredondadas*/
+}
