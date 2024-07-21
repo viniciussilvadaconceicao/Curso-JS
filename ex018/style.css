@@ -17,3 +17,8 @@ section{
     border-radius: 10px; /*bordas arredondadas*/
 }
 
+select{
+    padding: 10px;
+    margin: 10px;
+    width:150px;
+}
